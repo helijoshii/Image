@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-    <p class="text-green-300">Hello, world!</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black">
+    <div class="m-0 p-0 font-serif box-border">
+      <div
+        class="gallery-wrap flex items-center justify-center my-[10%] mx-auto"
+      >
+        <img
+          src="\images\back.png"
+          id="backbtn"
+          class="w-[50px] cursor-pointer m-10"
+        />
+        <div
+          class="gallery w-[900px] flex overflow-x-scroll"
+          style="overflow: auto; scrollbar-width: none"
+          onmouseover="this.style.scrollbarWidth = 'auto';"
+          onmouseout="this.style.scrollbarWidth = 'none';"
+        >
+          <div
+            class="w-full grid gap-5 p-2 flex-none"
+            style="grid-template-columns: auto auto auto"
+          >
+            <span
+              ><img
+                class="w-full grayscale transition-transform duration-500 hover:cursor-pointer hover:grayscale-0 hover:scale-110"
+                src="\images\image-1.png"
+                alt=""
+            /></span>
+            <span
+              ><img
+                class="w-full grayscale transition-transform duration-500 hover:cursor-pointer hover:grayscale-0 hover:scale-110"
+                src="\images\image-2.png"
+                alt=""
+            /></span>
+            <span
+              ><img
+                class="w-full grayscale transition-transform duration-500 hover:cursor-pointer hover:grayscale-0 hover:scale-110"
+                src="\images\image-3.png"
+                alt=""
+            /></span>
+          </div>
+
+          <div
+            class="w-full grid gap-5 p-2 flex-none"
+            style="grid-template-columns: auto auto auto"
+          >
+            <span
+              ><img
+                class="w-full grayscale transition-transform duration-500 hover:cursor-pointer hover:grayscale-0 hover:scale-110"
+                src="\images\image-4.png"
+                alt=""
+            /></span>
+            <span
+              ><img
+                class="w-full grayscale transition-transform duration-500 hover:cursor-pointer hover:grayscale-0 hover:scale-110"
+                src="\images\image-5.png"
+                alt=""
+            /></span>
+            <span
+              ><img
+                class="w-full grayscale transition-transform duration-500 hover:cursor-pointer hover:grayscale-0 hover:scale-110"
+                src="\images\image-6.png"
+                alt=""
+            /></span>
+          </div>
+        </div>
+        <img
+          src="\images\next.png"
+          id="nextbtn"
+          class="w-[50px] cursor-pointer m-10"
+        />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
